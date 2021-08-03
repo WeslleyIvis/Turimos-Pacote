@@ -1,0 +1,353 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: rgb(235, 0, 0);
+    
+}
+.menu {
+    background-color: rgb(61, 60, 60);
+    text-align: center;
+    width: 100%;  
+
+}
+
+h1,h3 {
+    padding: 20px;
+    color: white;
+}
+
+p {    
+    font-size: 16px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.skytree {  
+    text-align: center;
+    background-color: rgb(235, 218, 197);   
+}
+
+.skytree div {
+    padding: 10px;
+}
+
+/* ----------VALOR------------ */
+
+.valor {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: rgb(27, 27, 27);
+    -webkit-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48); 
+box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48);
+}
+
+.valor img {
+    width: 900px;
+    padding: 20px;
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    border-radius: 50%;
+}
+
+.valor img:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+     border-radius: 0%;
+}
+
+
+/* ----------DESTINO------------ */
+
+
+.destino {
+    margin-top: 20px;
+    background-color: rgb(27, 27, 27); 
+    -webkit-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48); 
+box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48);
+}
+
+.destino img {
+    height: 600px;
+}
+
+.destino p {
+    margin: 50px;
+    font-weight: 1.1rem;
+    text-align: start;
+}
+
+/* ----------LOCAL------------ */
+
+
+.conteudo {
+    grid-area: conteudo;
+    height: 100%;
+    text-align: start;       
+}
+
+.conteudo p {
+    font-size: 1.1rem;
+}
+
+.local1{
+    grid-area: local1;
+    justify-self: end;
+}
+
+.local2 {
+    grid-area: local2;
+    justify-self: end;
+}
+
+.local3 {
+    grid-area: local3;
+    justify-self: start;
+}
+
+.local4 {
+    grid-area: local4;
+    justify-self: start;
+    
+}
+
+.local-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'conteudo local1 local3'
+    'conteudo local2 local4';    
+}
+
+.local {
+    margin-top: 20px;
+    background-color: rgb(27, 27, 27);    
+    -webkit-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48); 
+box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48);
+}
+
+.local img {
+    max-width: 100%;
+    height: 400px;
+   
+}
+
+/* ----------LEMBRANÇAS------------ */
+
+.compras {
+  margin-top: 20px ;
+    background-color: rgb(27, 27, 27);
+
+    -webkit-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48); 
+box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.48);
+
+}
+
+.compras img {
+    max-width: 100%;   
+    height: 400px;
+    padding: 2px;
+}
+
+.lojas {
+    grid-area: lojas;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(27, 27, 27, 0.747) 99% , rgb(27,27,27) 99%),
+    linear-gradient(to top, transparent 0%, rgb(27, 27, 27) 99%, rgb(27,27,27) 99%),
+    linear-gradient(to right, transparent 0%, rgb(27, 27, 27) 99%, rgb(27,27,27) 99%),
+    linear-gradient(to left, transparent 0%, rgb(27, 27, 27) 99%, rgb(27,27,27) 99%),
+    url('https://images6.alphacoders.com/409/thumb-1920-409993.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.lojas p {
+    text-align: start;
+    font-size: 1.30rem;
+}
+
+.lojas p:hover {
+    color: rgb(101, 101, 156);
+    cursor: pointer;
+}
+
+.img1 {
+    grid-area: img1;
+    justify-self: end;
+}
+
+.img2 {
+    grid-area: img2;
+    justify-self: start;
+}
+
+.img3 {
+    grid-area: img3;
+    justify-self: end;
+}
+
+.img4 {
+    grid-area: img4;
+    justify-self: start;
+}
+
+.lembracas {   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    ' img1 img2 lojas'
+    ' img3 img4 lojas';
+    
+    gap: 10px;
+}
+
+/* ----------COMIDAS------------ */
+
+.gastronomia {
+    background-image:linear-gradient(to bottom, transparent 30%, black 90%, black 90%),
+    linear-gradient(to top, transparent 30%, black 90%, black 90%),
+    url('../imagens/background-restaurante.jpg');
+     
+    
+    background-size: cover;
+    margin-top: 20px;
+}
+
+
+.carrossel-imagens {
+   /* padding: 10px 250px 10px 250px; Redimen/carrosel width */   
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0);
+    object-position: cover;
+}
+
+.carousel-caption p, h5 {
+    color: rgb(0, 255, 242);
+    background-color: rgba(0, 0, 0, 0.315);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.pass:hover {
+    background-color: rgba(22, 22, 22, 0.089);
+}
+
+@media screen and (max-width: 1500px){
+    .carrossel-imagens {
+        padding: 0;
+        max-height: 500px;
+        
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    .local-grid{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .local-grid img {
+        height: 500px;
+    }
+
+
+}
+
+@media screen and (max-width: 780px) {
+    h1,h3 {
+        font-size: 24px;
+        color: white;
+    }
+    
+    p {      
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .local-grid{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .local img {    
+        height: 300px;
+    }
+    
+    .lembracas{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+
+    .carrossel-imagens {
+        padding: 0;
+        height: 200px;  
+    }
+}
+
+@media screen and (max-width: 380px) {  
+    .destino p{
+        margin: 10px;
+        font-size: 1rem;
+    }
+   
+    .destino img {
+        height: 400px;
+    }
+
+    .local h1, h3 {
+        padding: 0;
+        font-size: 1.3rem;
+    }
+
+    .local p {
+        font-size: 1rem;
+    }
+
+    .local-grid img {
+        height: 150px;
+    }
+
+    .lembracas img {
+        height: 100%;
+    }
+
+    .lembracas h3 {
+        padding-bottom: 10px;
+        color: yellow;
+    }
+
+    .lembracas p {
+        font-size: 1rem;      
+    }
+
+    .carrossel-imagens {       
+        max-height: 150px;
+    }
+    
+    footer {
+        height: auto;
+        
+    }
+}
